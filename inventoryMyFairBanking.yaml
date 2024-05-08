@@ -1,0 +1,22 @@
+backendservers:
+  hosts:
+    accounts:
+      ansible_host: XXXX
+    transactions:
+      ansible_host: XXXX
+frontendservers:
+  hosts:
+    front:
+      ansible_host: XXXX
+monitoringservers:
+  hosts:
+    monitoring:
+      ansible_host: XXXX
+statictestservers:
+  hosts:
+    statictest:
+      ansible_host: XXXX
+dynamictestservers:
+  hosts:
+    dynamictest:
+      ansible_host: XXXX
