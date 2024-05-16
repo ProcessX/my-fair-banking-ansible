@@ -8,7 +8,7 @@
         state: present
     - name: ensure repo is configured
       apt_repository:
-        repo: "deb https://pkg.jenkins.io/debian-stable binary/"
+        repo: "deb https://pkg.jenkins.io/debian-stable binary/'
         state: present
     - name: update apt cache
       apt:
@@ -19,7 +19,4 @@
         name: jenkins
         state: latest
     - name: Start Jenkins
-      service:
-        name: jenkins
-        enabled: true
-        state: started
+    
