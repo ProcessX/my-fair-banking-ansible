@@ -1,0 +1,6 @@
+- name: Install Jenkins
+  hosts: ???
+  remote_user: control
+  become_user: yes
+  tasks
+
