@@ -1,0 +1,9 @@
+- name: Create jenkinscli directory
+  file:
+    path: /tmp/jenkinscli
+    state: directory
+    mode: '0755'
+- name: Download jenkinscli
+  get_url:
+    url: http://jenkins:8080/jnlpJars/jenkins-cli.jar
+    dest: /tmp/jenkinscli

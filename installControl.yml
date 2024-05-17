@@ -1,8 +1,10 @@
-- name: Install backend dependencies
-  hosts: backend
-  become: yes
+- hosts: localhost
+  connection: local
+  become: true
   roles:
     - install-java
     - install-maven
     - install-git
     - install-jenkins
+
+

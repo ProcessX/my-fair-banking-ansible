@@ -1,9 +1,0 @@
-- name: Install Maven
-  hosts: all
-  become: yes
-  tasks:
-    - name: Install Maven
-      apt:
-        name: maven
-        update_cache: yes
-        state: latest

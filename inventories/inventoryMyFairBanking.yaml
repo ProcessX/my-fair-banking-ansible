@@ -1,5 +1,0 @@
-
-myhosts:
-  hosts:
-    backend:
-      ansible_host: 172.16.1.51
