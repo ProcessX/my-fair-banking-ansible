@@ -1,0 +1,11 @@
+- name: Install Prometheus & Grafana
+  hosts: monitorserver
+  become: yes
+  roles:
+  - install-prometheus
+  - install-grafana
+- name: install node-exporter
+  hosts: nodeservers
+  become: yes
+  roles:
+  - install-node-exporter

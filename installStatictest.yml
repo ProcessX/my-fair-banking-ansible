@@ -1,0 +1,6 @@
+- name: Install Static Test
+  hosts: statictest
+  become: true
+  roles:
+    - install-postgresql
+    - install-java

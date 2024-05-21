@@ -6,3 +6,4 @@
     - install-maven
     - install-git
     - install-jenkins
+    - install-docker
